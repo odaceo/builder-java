@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  8-ubuntu18:
+    build:
+      context: ./ubuntu-18
+      dockerfile: ../Dockerfile
+      args:
+        BUILDER_VERSION: ubuntu18
+        OPENJDK_VERSION: 8
+    image: odaceo/java:8-ubuntu18
